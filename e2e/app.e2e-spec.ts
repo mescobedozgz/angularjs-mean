@@ -1,14 +1,14 @@
 import { MeanRvspPage } from './app.po';
 
-describe('mean-rvsp App', () => {
+describe('mean-rvsp App', function() {
   let page: MeanRvspPage;
 
   beforeEach(() => {
     page = new MeanRvspPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
